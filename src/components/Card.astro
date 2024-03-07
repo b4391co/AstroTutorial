@@ -1,0 +1,22 @@
+---
+interface Props {
+    link: string
+    name: string
+}
+const {link,name} = Astro.props;
+---
+
+<a
+    href={`${link}`}
+    class="rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:scale-105
+    hover:bg-gray-700 hover:border-gray-500 transition flex flex-col mx-16"
+>
+    <header class="p-4 flex-grow mx-10 px-10">
+        <h2 class="my-2 text-2xl font-bold tracking-tight text-white">
+            {`${name}`}
+        </h2>
+        <p class="mb-4 font-light text-gray-400">
+            <slot/>
+        </p>
+    </header>
+</a>
