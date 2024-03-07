@@ -1,8 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
+
 ---
 
 <Layout title="Astro Tutorial.">
 	La pag principal
+	<nav class="flex flex-col items-center justify-center w-full text-center md:flex-row my-10">
+	<Card link="/" name="github">Este es mi github</Card>
+	<Card link="/" name="github">Este es mi github</Card>
+	</nav>
+	<nav class="flex flex-col items-center justify-center w-full text-center md:flex-row my-10">
+		<Card link="/" name="github">Este es mi github</Card>
+		<Card link="/" name="github">Este es mi github</Card>
+		</nav>
 </Layout>
